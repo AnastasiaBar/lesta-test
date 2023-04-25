@@ -1,0 +1,228 @@
+/*colors*/
+.card-border {
+  background: linear-gradient(to top, #FFC000, #EF4511);
+  padding: 2px;
+  border-radius: 6px;
+}
+.card-border .card {
+  background: #161616;
+  border-radius: 6px;
+}
+.card-border .card .card__title p {
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 48px;
+}
+
+a.btn, button.btn {
+  display: inline-flex;
+  padding: 25px 0;
+  cursor: pointer;
+  font-size: 24px;
+  opacity: 1;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+  font-weight: 700;
+  line-height: 20px;
+  justify-content: center;
+  color: #fff;
+}
+a.btn:hover, button.btn:hover {
+  opacity: 0.72;
+  text-decoration: none;
+}
+a.btn:active, button.btn:active {
+  opacity: 1;
+}
+a.btn.btn-fill, button.btn.btn-fill {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 84.9%), linear-gradient(180deg, rgba(255, 204, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 81.25%), #F25322;
+  box-shadow: 0px 1.625px 0px #661000, inset 0px 0px 6.5px rgba(255, 217, 102, 0.1);
+  background-blend-mode: multiply, overlay, normal;
+}
+
+@font-face {
+  font-family: "Roboto_Condensed";
+  src: url("../../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto_Condensed";
+  src: url("../../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto_Condensed";
+  src: url("../../fonts/Roboto_Condensed/RobotoCondensed-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  font-family: "Roboto_Condensed", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+body .container__game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container__name_game {
+  position: absolute;
+  top: -4px;
+  left: 5%;
+  max-width: 370px;
+  min-width: 320px;
+}
+.container__name_game .card-border {
+  background: linear-gradient(to bottom, #FFC000, #EF4511);
+  border-radius: 0;
+}
+.container__name_game .card-border .card {
+  padding: 25px 40px;
+  border-radius: 0;
+}
+.container__name_game .card-border .card .game__logo {
+  width: 100%;
+}
+.container__name_game .card-border .card .game__logo .logo {
+  line-height: 0;
+}
+.container__name_game .card-border .card .game__logo .logo img {
+  width: 100%;
+  object-fit: cover;
+}
+.container__name_game .card-border .card p {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container__name_game .card-border .card .game__btn {
+  width: 100%;
+  margin: 40px 0 60px 0;
+}
+.container__name_game .card-border .card .game__btn .btn {
+  width: 100%;
+}
+
+.container__characteristic {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+.container__characteristic .card-border .card {
+  padding: 25px 30px;
+}
+.container__characteristic .card-border .card .card__title p {
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 48px;
+  text-align: center;
+}
+.container__characteristic .card-border .card .card__characteristic {
+  margin-top: 20px;
+}
+.container__characteristic .card-border .card .card__characteristic .characteristic__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dashed #4B4B4B;
+  padding: 5px 0;
+  gap: 0 30px;
+}
+.container__characteristic .card-border .card .card__characteristic .characteristic__block p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #D7D2B8;
+  width: calc(100% - 230px);
+  white-space: nowrap;
+}
+.container__characteristic .card-border .card .card__characteristic .characteristic__block p:first-child {
+  width: 230px;
+}
+@media (max-width: 1600px) {
+  .container__characteristic .card-border .card .card__characteristic .characteristic__block p:first-child {
+    width: 180px;
+  }
+}
+@media (max-width: 1840px) {
+  .container__characteristic {
+    right: 5%;
+  }
+}
+
+.container__navigation_game {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, 0);
+  margin: 0 auto;
+}
+.container__navigation_game .navigation_game {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 60px;
+}
+.container__navigation_game .navigation_game .nav__card {
+  width: 33.3333333333%;
+  background: linear-gradient(to top, #FFC000, #EF4511);
+  padding: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container__navigation_game .navigation_game .nav__card .card {
+  height: calc(100% - 70px);
+  padding: 35px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.container__navigation_game .navigation_game .nav__card .card .card__step {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
+.container__navigation_game .navigation_game .nav__card .card .card__step p {
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+.container__navigation_game .navigation_game .nav__card .card .card__title {
+  margin-bottom: 15px;
+}
+.container__navigation_game .navigation_game .nav__card .card .card__title p {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+.container__navigation_game .navigation_game .nav__card .card .card__text {
+  margin-top: auto;
+}
+.container__navigation_game .navigation_game .nav__card .card .card__text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #D7D2B8;
+}
+.container__navigation_game .footer__game {
+  margin: 50px 0 20px 0;
+}
+.container__navigation_game .footer__game p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 1575px) {
+  .container__navigation_game {
+    width: 90%;
+  }
+}

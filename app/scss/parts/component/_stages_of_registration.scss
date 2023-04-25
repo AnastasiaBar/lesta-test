@@ -1,0 +1,79 @@
+.container__navigation_game{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, 0);
+  margin: 0 auto;
+
+  .navigation_game{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 60px;
+
+    .nav__card{
+      width: calc(100% / 3);
+      background: linear-gradient(to top, #FFC000, #EF4511);
+      padding: 2px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+      .card{
+        height: calc(100% - 70px);
+        padding: 35px 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .card__step{
+          position: absolute;
+          top: 8px;
+          right: 12px;
+
+          p{
+            font-weight: 700;
+            font-size: 61px;
+            line-height: 72px;
+            text-transform: uppercase;
+          }
+        }
+
+        .card__title{
+          margin-bottom: 15px;
+
+          p{
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 29px;
+            text-transform: uppercase;
+          }
+        }
+
+        .card__text{
+          margin-top: auto;
+
+          p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $beige;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__game{
+    margin: 50px 0 20px 0;
+
+    p{
+      text-align: center;
+      font-size: 16px;
+      line-height: 29px;
+      color: $grey;
+    }
+  }
+
+  @media(max-width: 1575px) {
+    width: 90%;
+  }
+}

@@ -1,0 +1,23 @@
+// adaptive
+@import '_mixins.scss';
+
+//variables
+@import 'variables';
+
+//general elements
+@import 'parts/general-elements';
+
+//buttons
+@import 'parts/buttons';
+
+//fonts
+@import 'parts/fonts';
+
+// index
+@import 'page/index';
+
+@import 'parts/component/downloading_the_game';
+
+@import 'parts/component/description_of_the_object';
+
+@import 'parts/component/stages_of_registration';

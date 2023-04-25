@@ -1,0 +1,23 @@
+.card-border{
+  background: linear-gradient(to top, #FFC000, #EF4511);
+  padding: 2px;
+  border-radius: 6px;
+
+  .card{
+    background: $black;
+    border-radius: 6px;
+
+
+    .card__title{
+
+      p{
+        font-weight: 700;
+        font-size: 41px;
+        line-height: 48px;
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,47 @@
+.container__name_game{
+  position: absolute;
+  top: -4px;
+  left: 5%;
+  max-width: 370px;
+  min-width: 320px;
+
+  .card-border{
+    background: linear-gradient(to bottom, #FFC000, #EF4511);
+    border-radius: 0;
+
+    .card{
+      padding: 25px 40px;
+      border-radius: 0;
+
+      .game__logo{
+        width: 100%;
+
+        .logo{
+          line-height: 0;
+
+          img{
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      p{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .game__btn{
+        width: 100%;
+        margin: 40px 0 60px 0;
+
+        .btn{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

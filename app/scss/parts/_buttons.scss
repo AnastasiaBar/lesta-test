@@ -1,0 +1,31 @@
+a, button {
+
+  &.btn {
+    display: inline-flex;
+    padding: 25px 0;
+    cursor: pointer;
+    font-size: 24px;
+    opacity: 1;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+    font-weight: 700;
+    line-height: 20px;
+    justify-content: center;
+    color: $white;
+
+    &:hover{
+      opacity: .72;
+      text-decoration: none;
+    }
+
+    &:active{
+      opacity: 1;
+    }
+
+    &.btn-fill{
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 84.9%), linear-gradient(180deg, rgba(255, 204, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 81.25%), #F25322;
+      box-shadow: 0px 1.625px 0px #661000, inset 0px 0px 6.5px rgba(255, 217, 102, 0.1);
+      background-blend-mode: multiply, overlay, normal;
+    }
+  }
+}

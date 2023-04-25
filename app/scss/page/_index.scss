@@ -1,0 +1,13 @@
+body {
+  font-family: $font__Roboto_Condensed;
+  font-weight: 400;
+  color: white;
+
+  .container__game{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
